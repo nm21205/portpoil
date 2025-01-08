@@ -32,7 +32,7 @@ const Main = () => {
           <nav>
             <ul>
               <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
-              <li><Link to="/price" onClick={scrollToTop}>특가</Link></li>
+              <li><Link to="/price" onClick={scrollToTop}>특 가</Link></li>
               <li><Link to="/trips" onClick={scrollToTop}>전체 일정</Link></li>
               <li><Link to="/air" onClick={scrollToTop}>여행사</Link></li>
               <li><Link to="/weather" onClick={scrollToTop}>도착지 날씨</Link></li>

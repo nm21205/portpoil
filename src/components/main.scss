@@ -111,7 +111,7 @@ svg:hover{
   .main-container {
     ul {
       position: absolute;
-      top: 35%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       height: auto;
@@ -149,6 +149,21 @@ svg:hover{
 
   .main-title-container {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    ul {
+      top: 40%;
+      
+      li {
+        a {
+          font-size: 24px;
+          margin: 15px;
+        }
+      }
+    }
   }
 }
 

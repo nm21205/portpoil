@@ -42,4 +42,40 @@
 
     *{display: none;}
   }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .location-board {
+      .locationList {
+        padding: 15px 10px;
+
+        a {
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+
+          .textBox {
+            p {
+              font-size: 18px;
+            }
+          }
+
+          .addBox {
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

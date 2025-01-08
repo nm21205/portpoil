@@ -104,4 +104,113 @@
   100% {
     opacity: 1;
   }
+}
+
+@media (max-width: 768px) {
+  .sale-wrap {
+    padding: 10px;
+
+    table {
+      th {
+        font-size: 14px;
+        padding: 12px 8px;
+      }
+
+      td {
+        padding: 10px 8px;
+        font-size: 13px;
+
+        &.title {
+          font-size: 13px;
+        }
+      }
+
+      colgroup {
+        col:nth-child(1) { width: 20% !important; }  // 날짜
+        col:nth-child(2) { display: none; }          // 출발/항공 숨김
+        col:nth-child(3) { width: 50% !important; }  // 제목
+        col:nth-child(4) { width: 30% !important; }  // 가격
+        col:nth-child(5) { display: none; }          // 잔여석 숨김
+        col:nth-child(6) { display: none; }          // 상태 숨김
+      }
+
+      th:nth-child(2),
+      td:nth-child(2),
+      th:nth-child(5),
+      td:nth-child(5),
+      th:nth-child(6),
+      td:nth-child(6) {
+        display: none;  // 해당 열들 숨기기
+      }
+    }
+
+    .pagination {
+      margin-top: 15px;
+      gap: 5px;
+      
+      button {
+        padding: 8px 10px;
+        font-size: 12px;
+        
+        // 페이지 번호 5개까지만 표시
+        &:nth-child(n+7):not(:last-child) {
+          display: none;
+        }
+      }
+    }
+  }
+} 
+
+@media (max-width: 480px) {
+  .sale-wrap {
+    padding: 5px;
+
+    table {
+      th {
+        font-size: 13px;
+        padding: 8px 5px;
+      }
+
+      td {
+        padding: 8px 5px;
+        font-size: 12px;
+
+        &.title {
+          font-size: 12px;
+        }
+      }
+
+      colgroup {
+        col:nth-child(1) { display: none; }          // 여행기간 숨김
+        col:nth-child(2) { display: none; }          // 출발/항공 숨김
+        col:nth-child(3) { width: 70% !important; }  // 제목
+        col:nth-child(4) { width: 30% !important; }  // 가격
+        col:nth-child(5) { display: none; }          // 잔여석 숨김
+        col:nth-child(6) { display: none; }          // 상태 숨김
+      }
+
+      th:nth-child(1),
+      td:nth-child(1),
+      th:nth-child(2),
+      td:nth-child(2),
+      th:nth-child(5),
+      td:nth-child(5),
+      th:nth-child(6),
+      td:nth-child(6) {
+        display: none;  // 해당 열들 숨기기
+      }
+    }
+
+    .pagination {
+      button {
+        padding: 6px 8px;
+        font-size: 11px;
+        
+        // 페이지 번호 3개까지만 표시
+        &:nth-child(n+5):not(:last-child) {
+          display: none;
+        }
+      }
+    }
+  }
 } 
