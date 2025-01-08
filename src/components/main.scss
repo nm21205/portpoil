@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
 .main-container{
 
   height: 600px;
@@ -37,8 +39,13 @@ ul{
   li{
     cursor: pointer;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
     color: #000;
+
+    a {
+      font-family: inherit;
+    }
   }
  
 }
@@ -73,14 +80,16 @@ ul{
   
   text-align: center;
   color: white;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 35px;
   border: 1px solid transparent;
   padding: 10px;
- opacity: 0.9;
+
   }
 
   h3:hover{
-  border: 0.5px solid rgba(29, 230, 245, 0.5);
+  border: 3px solid rgba(29, 230, 245, 0.5);
+  background: rgba(255, 255, 255, 0.1);
 
     transition: 0.8s;
   }
