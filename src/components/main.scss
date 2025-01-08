@@ -1,0 +1,154 @@
+.main-container{
+
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+  background-size: cover;
+  transition: 0.4s;
+
+}
+
+ul,li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+
+
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  gap: 10px;
+  outline: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 25px;
+  li{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+  }
+ 
+}
+  ul li:hover{
+    color:white;
+  }
+
+
+
+.main-title-container{
+  width: 100%;
+  height: 100%;
+  margin-top: -50px;
+
+
+  .main-title{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 600;
+    color:white;
+    height: 680px;
+    margin: 0 200px;
+
+  
+  h3{
+   
+  
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border: 1px solid transparent;
+  padding: 10px;
+ opacity: 0.9;
+  }
+
+  h3:hover{
+  border: 0.5px solid rgba(29, 230, 245, 0.5);
+
+    transition: 0.8s;
+  }
+  
+
+  
+  }
+}
+
+
+
+svg{
+
+  width: 40px;
+  cursor: pointer;
+  font-size: 40px;
+  color:rgba(10, 10, 10, 0.9);
+
+}
+
+svg:hover{
+  scale: 1.1;
+  transition: 0.3s;
+  color:blue;
+}
+
+@media (max-width: 1100px) {
+  .main-container {
+    ul {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: auto;
+      width: 100%;
+      max-width: 1100px;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 0;
+      border-radius: 10px;
+      gap: 20px;
+   
+      li {
+        display: block !important;
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+
+        a {
+          color: white;
+          display: block;
+          width: 100%;
+          font-size: 40px;
+          margin: 25px;
+        }
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+    
+      }
+
+    }
+  }
+
+  .main-title-container {
+    display: none;
+  }
+}
+
